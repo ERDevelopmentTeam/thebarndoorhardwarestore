@@ -1,0 +1,404 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_N4tLzi": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "collapsible_tab_FBCgKG": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What's in the kit?",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.what_s_included | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "collapsible_tab_BbkdHB": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "none",
+            "content": "<p>For more information on shipping, visit <a href=\"\/pages\/shipping\" title=\"Shipping\">this page<\/a>. For more information on returns, visit <a href=\"\/pages\/return-policy\" title=\"Return Policy\">this page<\/a>.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_BXkbLc": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Need some inspiration?",
+            "icon": "none",
+            "content": "<p>Check out our <a href=\"https:\/\/www.pinterest.com\/thebarndoorhardwarestore\/barn-door-inspiration\/\" target=\"_blank\" title=\"The Barn Door Hardware Store Pinterest\">Pinterest<\/a> board for endless ideas on how to style our products. From casual to chic, we've got you covered.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_eJ3UgW": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Need assistance?",
+            "icon": "none",
+            "content": "<p>If you have any further questions or would like to discuss your project in more detail, please don't hesitate to reach out to Evan at <a href=\"mailto:evan@thebarndoorhardwarestore.com\" target=\"_blank\" title=\"Email Evan\">evan@thebarndoorhardwarestore.com<\/a>. We're always happy to help and provide personalized recommendations to ensure you create the perfect barn door solution for your space.<\/p>",
+            "page": ""
+          }
+        },
+        "complementary_U39gNc": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "PAIRS WELL WITH",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        }
+      },
+      "block_order": [
+        "title_N4tLzi",
+        "price",
+        "description",
+        "collapsible_tab_FBCgKG",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "collapsible_tab_BbkdHB",
+        "collapsible_tab_BXkbLc",
+        "collapsible_tab_eJ3UgW",
+        "complementary_U39gNc"
+      ],
+      "custom_css": [
+        ".quantity__input {padding: 10px;}",
+        ".rte li {list-style: unset; display: list-item;}",
+        "p,strong,span,li span {font-size: 15px !important; }",
+        "amp-img {display: inline-block;}",
+        ".button,button {text-transform: uppercase !important;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-ffe70f94-df54-4447-bd5f-b6cebad7fd2b",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "1723936345026550e4": {
+      "type": "apps",
+      "custom_css": [
+        "h2 {text-transform: uppercase; font-size: 40px;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "two_images_iGkPkd": {
+      "type": "two-images",
+      "custom_css": [
+        "img {object-fit: contain;}",
+        "amp-img {display: inline-block;}"
+      ],
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/Barn_Door_Weights.svg",
+        "text1": "",
+        "sub1": "",
+        "para1": "",
+        "buttontext1": "",
+        "buttonlink1": "",
+        "image2": "shopify:\/\/shop_images\/Asset_3bd2.png",
+        "text2": "",
+        "sub2": "",
+        "para2": "",
+        "buttontext2": "",
+        "buttonlink2": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_GLaNah": {
+      "type": "rich-text",
+      "blocks": {
+        "button_3pmktw": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHIPPING INFORMATION",
+            "button_link": "shopify:\/\/pages\/shipping",
+            "button_style_secondary": false,
+            "button_label_2": "INSTRUCTION MANUAL",
+            "button_link_2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0675\/2560\/7581\/files\/Pine_Barn_Door_Manual.pdf?v=1725662714",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_3pmktw"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1025px) {.rich-text__buttons {display: flex; justify-content: center; flex-wrap: nowrap; gap: 1rem; padding: 0 50px; width: 100%; max-width: 80rem; word-break: break-word; }}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-c806a630-a70d-4adf-a630-76c8197d6848",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_E7dUKa": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_mUWc6g": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I have never had a barn door before. Where should I start?",
+            "icon": "none",
+            "row_content": "<p>We’re here for you all day, every day, even on weekends. If you need help with your order, just shoot an email to <a href=\"mailto:evan@thebarndoorhardwarestore.com\" title=\"mailto:evan@thebarndoorhardwarestore.com\">evan@thebarndoorhardwarestore.com<\/a>. He’ll give you all the suggestions, ideas, and personal assistance you need to get your order just right. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CQhYnr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What factors should be considered when selecting the height of a barn door?",
+            "icon": "none",
+            "row_content": "<p>Here is a breakdown of the factors to consider when selecting the height and width of your barn door:<\/p><p><strong>Doorway without Molding:<\/strong><\/p><ul><li><strong>Overlay:<\/strong> A 2-inch overlay is recommended to provide a barrier for light, sound, and privacy. This will make the barn door 2 inches taller than the opening.<\/li><li><strong>Clearance Restrictions:<\/strong> If there is limited clearance, a 1-inch overlay can be used.<\/li><li><strong>Floor Clearance:<\/strong> The door should be lifted 1\/2 inch off the floor for smooth rolling.<\/li><\/ul><p><strong>Cased Opening:<\/strong><\/p><ul><li><strong>Aesthetics:<\/strong> The door should ideally cover the entire casing for a visually pleasing appearance.<\/li><li><strong>Measurement:<\/strong> Measure the height from the floor to the top of the casing to determine the required barn door height.<\/li><\/ul><p><strong>Additional Considerations:<\/strong><\/p><ul><li><strong>Building Codes:<\/strong> Ensure that the barn door complies with local building codes regarding size and safety regulations.<\/li><li><strong>Functionality:<\/strong> Consider the intended use of the barn door and any specific requirements, such as wheelchair accessibility or energy efficiency.<\/li><li><strong>Style:<\/strong> Choose a barn door size that complements the overall style and design of your space.<\/li><\/ul><p>By carefully considering these factors, you can select the ideal height and width for your barn door to ensure both functionality and aesthetic appeal.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_AqnPty": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What factors should be considered when selecting the width of a barn door?",
+            "icon": "none",
+            "row_content": "<p>Choosing the right door width depends on the hardware you plan to use. <\/p><p>When selecting a door width, remember to consider the overlap between the door and the door opening.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_w4zK7V": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What range of barn door thicknesses is compatible with your hardware?",
+            "icon": "none",
+            "row_content": "<p>Our barn door hardware kits are compatible with doors ranging from 1\/2 to 3 inches thick.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_PMt76U": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need a header for my barn door setup?",
+            "icon": "none",
+            "row_content": "<p>When installing barn door hardware, a header is crucial for several reasons:<\/p><ul><li><strong>Enhanced Aesthetics:<\/strong> A header provides a cleaner and more finished look to your installation, elevating the overall appearance of your space.<\/li><li><strong>Structural Integrity:<\/strong> By distributing the weight of the barn door system evenly, a header prevents potential damage to drywall, especially for large or heavy doors.<\/li><li><strong>Flexible Installation:<\/strong> Headers come pre-drilled with track mounting holes, allowing you to customize the track's position on the wall. Without a header, you're limited to the stud locations.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EDVW46": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What type of wood is best for a barn door header support?",
+            "icon": "none",
+            "row_content": "<p>For your barn door header support, a sturdy hardwood is recommended. This will ensure it can adequately support the weight of your barn door.<\/p><p>Here are some popular choices:<\/p><ul><li><strong>Red Oak:<\/strong> Known for its strength, durability, and attractive grain.<\/li><li><strong>White Oak:<\/strong> Another strong and durable option with a slightly lighter color.<\/li><li><strong>Maple:<\/strong> Offers excellent strength and a clean, classic appearance.<\/li><li><strong>Birch:<\/strong> A solid choice that is affordable and readily available.<\/li><li><strong>Poplar:<\/strong> Known for its consistency and paintability.<\/li><\/ul><p>Avoid softwoods like pine, as they may not be strong enough to support the weight of your barn door over time.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BtPzT9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the recommended thickness and length for a barn door header support?",
+            "icon": "none",
+            "row_content": "<p>For optimal support, we recommend a minimum header board thickness of 3\/4 inches. The length of your header board should be equal to or slightly exceed the length of your barn door track. This ensures adequate support for the weight of your door and prevents sagging or instability.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pRTwzd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I'd like to see more examples of your barn door hardware installations. Do you have a gallery or portfolio?",
+            "icon": "none",
+            "row_content": "<p>Absolutely! We have a <a href=\"https:\/\/www.pinterest.com\/thebarndoorhardwarestore\/\" target=\"_blank\" title=\"https:\/\/www.pinterest.com\/thebarndoorhardwarestore\/\">Pinterest<\/a> page dedicated to showcasing our installed barn door hardware projects. You can find plenty of photos and inspiration there.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_g7cVyU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Have more questions?",
+            "icon": "none",
+            "row_content": "<p>If you have any further questions or would like to discuss your project in more detail, please don't hesitate to reach out to Evan at <a href=\"mailto:evan@thebarndoorhardwarestore.com\" title=\"mailto:evan@thebarndoorhardwarestore.com\">evan@thebarndoorhardwarestore.com<\/a>. We're always happy to help and provide personalized recommendations to ensure you create the perfect barn door solution for your space.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_mUWc6g",
+        "collapsible_row_CQhYnr",
+        "collapsible_row_AqnPty",
+        "collapsible_row_w4zK7V",
+        "collapsible_row_PMt76U",
+        "collapsible_row_EDVW46",
+        "collapsible_row_BtPzT9",
+        "collapsible_row_pRTwzd",
+        "collapsible_row_g7cVyU"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FREQUENTLY ASKED QUESTIONS",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "scheme-5",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "17258151005e2ed05f": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_VLAiAG": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_VLAiAG"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_MMxgjY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4DMDE3": {
+          "type": "heading",
+          "settings": {
+            "heading": "SUBSCRIBE",
+            "heading_size": "h0"
+          }
+        },
+        "text_RMA7HG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join our newsletter and enjoy 10% off your first purchase, exclusive new arrivals, and more.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4DMDE3",
+        "text_RMA7HG"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "172753582232d8c583": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_UAnNiE": {
+          "type": "shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "181696",
+            "text_color": "#202020",
+            "button_background_color": "#43523f",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 13,
+            "padding_bottom": 34,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_UAnNiE"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1723936345026550e4",
+    "two_images_iGkPkd",
+    "rich_text_GLaNah",
+    "collapsible_content_E7dUKa",
+    "17258151005e2ed05f",
+    "related-products",
+    "rich_text_MMxgjY",
+    "172753582232d8c583"
+  ]
+}
