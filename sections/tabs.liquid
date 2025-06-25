@@ -1,0 +1,958 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .featcontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.featcentered {
+  border-top: 1px solid white;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -20%);
+}
+
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+<div class="shopbyneed page-width shopify-section">
+<div class="wrapper">
+    <div class="tabs">
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+      <label for="tab-1" class="tab-label">{{ section.settings.label1 }}</label>
+      <div class="tab-content">
+<div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group1link1 }}"><img src="{{ section.settings.group1image1 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group1link1 }}"><h5>{{ section.settings.group1text1 }}</h5></a>
+</div> </div> </div> 
+<div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group1link2 }}"><img src="{{ section.settings.group1image2 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group1link2 }}"><h5>{{ section.settings.group1text2 }}</h5></a>
+</div> </div> </div> 
+ <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group1link3}}"><img src="{{ section.settings.group1image3 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group1link3 }}"><h5>{{ section.settings.group1text3 }}</h5></a>
+</div> </div> </div> 
+    <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group1link4 }}"><img src="{{ section.settings.group1image4 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group1link4 }}"><h5>{{ section.settings.group1text4 }}</h5></a>
+</div> </div> </div> 
+        <br style="clear;">
+
+
+      </div>
+    </div>
+
+
+       <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+      <label for="tab-2" class="tab-label">{{ section.settings.label2 }}</label>
+      <div class="tab-content">
+ <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group2link1 }}"><img src="{{ section.settings.group2image1 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group2link1 }}"><h5>{{ section.settings.group2text1 }}</h5></a>
+</div> </div> </div> 
+<div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group2link2 }}"><img src="{{ section.settings.group2image2 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group2link2}}"><h5>{{ section.settings.group2text2 }}</h5></a>
+</div> </div> </div> 
+ <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group2link3 }}"><img src="{{ section.settings.group2image3 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group2link3 }}"><h5>{{ section.settings.group2text3 }}</h5></a>
+</div> </div> </div> 
+<div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group2link4 }}"><img src="{{ section.settings.group2image4 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group2link4 }}"><h5>{{ section.settings.group2text4 }}</h5></a>
+</div> </div> </div> 
+
+ <br style="clear;">
+
+    
+</div>
+         
+    </div>
+
+
+
+
+
+   
+     <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+      <label for="tab-3" class="tab-label">{{ section.settings.label3 }}</label>
+      <div class="tab-content">
+        <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group3link1 }}"><img src="{{ section.settings.group3image1 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group3link1 }}"><h5>{{ section.settings.group3text1 }}</h5></a>
+</div> </div> </div> 
+<div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group3link2 }}"><img src="{{ section.settings.group3image2 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group3link2 }}"><h5>{{ section.settings.group3text2 }}</h5></a>
+</div> </div> </div> 
+ <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group3link3 }}"><img src="{{ section.settings.group3image3 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group3link3 }}"><h5>{{ section.settings.group3text3 }}</h5></a>
+</div> </div> </div> 
+   <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group3link4 }}"><img src="{{ section.settings.group3image4 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group3link4 }}"><h5>{{ section.settings.group3text4 }}</h5></a>
+</div> </div> </div> 
+         <br style="clear;">
+
+     
+       
+    </div></div>
+
+
+        <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
+      <label for="tab-4" class="tab-label">{{ section.settings.label4 }}</label>
+      <div class="tab-content">
+        <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group4link1 }}"><img src="{{ section.settings.group4image1 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group4link1 }}"><h5>{{ section.settings.group4text1 }}</h5></a>
+</div> </div> </div> 
+          <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group4link2 }}"><img src="{{ section.settings.group4image2 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group4link2 }}"><h5>{{ section.settings.group4text2 }}</h5></a>
+</div> </div> </div> 
+ <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group4link3 }}"><img src="{{ section.settings.group4image3 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group4link3 }}"><h5>{{ section.settings.group4text3 }}</h5></a>
+</div> </div> </div> 
+   <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group4link4 }}"><img src="{{ section.settings.group4image4 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group4link4 }}"><h5>{{ section.settings.group4text4 }}</h5></a>
+</div> </div> </div> 
+         <br style="clear;">
+  </div></div>
+
+        <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-5" class="tab-switch">
+      <label for="tab-5" class="tab-label">{{ section.settings.label5 }}</label>
+      <div class="tab-content">
+        <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group5link1 }}"><img src="{{ section.settings.group5image1 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group5link1 }}"><h5>{{ section.settings.group5text1 }}</h5></a>
+</div> </div> </div> 
+<div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group5link2 }}"><img src="{{ section.settings.group5image2 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group5link2 }}"><h5>{{ section.settings.group5text2 }}</h5></a>
+</div> </div> </div> 
+ <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group5link3 }}"><img src="{{ section.settings.group5image3 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group5link3 }}"><h5>{{ section.settings.group5text3 }}</h5></a>
+</div> </div> </div> 
+   <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group5link4 }}"><img src="{{ section.settings.group5image4 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group5link4 }}"><h5>{{ section.settings.group5text4 }}</h5></a>
+</div> </div> </div> 
+         <br style="clear;">
+  </div></div>
+
+
+  <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-6" class="tab-switch">
+      <label for="tab-6" class="tab-label">{{ section.settings.label6 }}</label>
+      <div class="tab-content">
+        <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group6link1 }}"><img src="{{ section.settings.group6image1 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group6link1 }}"><h5>{{ section.settings.group6text1 }}</h5></a>
+</div> </div> </div> 
+<div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group6link2 }}"><img src="{{ section.settings.group6image2 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group6link2 }}"><h5>{{ section.settings.group6text2 }}</h5></a>
+</div> </div> </div> 
+ <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group6link3 }}"><img src="{{ section.settings.group6image3 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group6link3 }}"><h5>{{ section.settings.group6text3 }}</h5></a>
+</div> </div> </div> 
+   <div class="one-third-column-row"><div class="featcontainer">
+<a href="{{ section.settings.group6link4 }}"><img src="{{ section.settings.group6image4 | img_url: 'master' }}" alt="{{ shop.name }}" height="100%" width="100%;"></a>
+<div class="featcentered"><a href="{{ section.settings.group6link4 }}"><h5>{{ section.settings.group6text4 }}</h5></a>
+</div> </div> </div> 
+         <br style="clear;">
+  </div></div>
+
+
+ 
+
+
+      
+    </div>
+     
+
+     
+  </div></div></div>
+
+<style>
+
+  @media only screen and (max-width: 900px)  {
+  .shopbyneed {
+    padding: 5% 2% 5% 2%;
+    height: 630px;
+  }
+  
+   .one-third-column-row {
+padding-top:20px;
+width:50%;
+    padding: 5px;
+float:left;
+}}
+
+  @media only screen and (min-width: 901px)  {
+  .shopbyneed {
+    height: 500px;
+  }
+  .one-third-column-row:nth-child(1) {
+    padding: 10px 10px 10px 0;
+  }
+
+     .one-third-column-row:nth-child(4) {
+    padding: 10px 0px 10px 10px;
+  }
+   .one-third-column-row {
+padding-top:20px;
+width:25%;
+    padding: 10px;
+float:left;
+}
+}
+
+  .shopbyneed h5 {
+    text-align:center;
+    padding: 0 10px;
+  }
+  .shopbyneed a {
+    text-align:center;
+    text-decoration: none;
+  }
+ 
+   .one-third-column-row  img {
+height: 400px;
+     object-fit:cover;
+     width: 100%;   }
+
+
+@media only screen and (max-width: 900px) {
+  .tabs::before,
+.tabs::after {
+  content: "";
+  display: none;
+}
+  .tabs {
+    width: 100%;
+    
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'dallaslight';
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    font-size:10px;
+    letter-spacing:2px;
+    height: 100%;
+    justify-content: space-between;
+}
+.one-third-column-row  img {
+ height: 250px;
+     object-fit:cover;
+     width: 100%;   }
+.one-quarter-column {
+  width: 50%;
+  float: left;
+}
+  .tab-content {
+color:black;
+  position: absolute;
+  z-index: 1;
+width: 100%;
+margin: 0 auto;
+  top: 3.75em;
+  left: 0;
+  color: #000;
+  opacity: 0;
+  transition: ease-in-out 0.35s;
+}
+
+  .tab {
+   padding: 2px 0;
+  float: left;
+font-size:13px;
+ text-align: center;
+margin: 0 auto;
+}
+}
+.wrapper {
+  max-width: none;
+  width: 100%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 901px) {
+.tabs {
+    width: 100%;font-size:10px;
+    letter-spacing:2px;
+    position: relative;
+    display: flex;
+  font-family: 'dallaslight';
+  padding-bottom:20px;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+}
+  .tab-content {
+color:black;
+  position: absolute;
+  z-index: 1;
+width: 100%;
+margin: 0 auto;
+  top: 2.75em;
+  left: 0;
+  color: #000;
+  opacity: 0;
+  transition: ease-in-out 0.35s;
+}
+
+
+  .tab {
+   padding: 2px 20px;
+  float: left;
+font-size:13px;
+ text-align: center;
+margin: 0 auto;
+}
+.tabs::before,
+.tabs::after {
+  content: "";
+
+  display: table;
+}}
+
+.tabs::after {
+  clear: both;
+}
+
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: auto;
+  height: auto;
+  padding: 0;
+  color: #000;
+  cursor: pointer;
+  top: 0;
+  transition: ease-in-out 0.25s;
+}
+.tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+}
+.tab-content p{
+color:black;}
+
+
+.tab-switch:checked + .tab-label {
+color: #000;
+    text-decoration: none;
+    text-underline-offset: 5px;
+    border: 1px solid;
+    transition: ease-in-out 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+    padding: 2px 20px;
+}
+.tab-switch:checked + label + .tab-content {
+  padding-top: 20px;
+  z-index: 2;
+  opacity: 1;
+  transition: ease-in-out 0.35s;
+}
+
+.one-half-column-left {
+width:48%;
+float:left;
+}
+
+.one-half-column-right {
+width:48%;
+float:right;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+.one-half-column-left, .one-half-column-right, 
+.one-third-column, .one-third-column-last {
+float:none;
+width:100%;
+margin-right:0;
+}
+}
+
+.one-third-column {
+width:32%;
+margin-right:2%;
+float:left;
+}
+.one-third-column-last {
+width:32%;
+margin-right:0;
+float:right;
+}
+
+@media only screen and (max-width: 600px) {
+.one-half-column-left, .one-half-column-right, 
+.one-third-column, .one-third-column-last {
+float:none;
+width:100%;
+margin-right:0;
+}
+#mobilehide {display: none;}
+
+.tab {
+    float: left;
+    display: flex;
+    font-size: 10px;
+    text-align: center;
+    margin: 0 auto;
+}}
+
+</style>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Tabs",
+    "settings": [
+    {
+      "type": "color_scheme",
+      "id": "section_color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.multirow.settings.container_color_scheme.label",
+      "default": "scheme-1"
+       },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "First Category"
+      
+        },
+    {
+       "type":"text",
+            "label":"Name of Collection",
+            "id":"label1",
+      "default":"WOMEN"
+       },
+    {
+            "type":"image_picker",
+            "label":"Image",
+            "id":"group1image1"
+         },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group1text1",
+      "default": "Product Name"
+      },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group1link1"
+     },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group1image2"
+       },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group1text2",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group1link2"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group1image3"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group1text3",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group1link3"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group1image4"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group1text4",
+       "default": "Product Name"
+       },
+    {
+    
+      "type": "header",
+      "content": "Second Category"
+        },
+    {
+       "type":"text",
+            "label":"Name of Collection",
+            "id":"label2",
+       "default":"MEN"
+    },
+    {
+       "type":"image_picker",
+            "label":"Image",
+            "id":"group2image1"
+         },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group2text1",
+       "default": "Product Name"
+      },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group2link1"
+     },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group2image2"
+       },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group2text2",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group2link2"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group2image3"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group2text3",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group2link3"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group2image4"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group2text4",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group2link4"
+    
+        },
+    {
+       "type": "header",
+      "content": "Third Category"
+        },
+    {
+       "type":"text",
+            "label":"Name of Collection",
+            "id":"label3",
+       "default":"SHOES"
+       },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group3image1"
+ },
+    {
+     
+      "type":"text",
+            "label":"Text",
+            "id":"group3text1",
+       "default": "Product Name"
+      },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group3link1"
+     },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group3image2"
+       },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group3text2",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group3link2"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group3image3"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group3text3",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group3link3"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group3image4"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group3text4",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group3link4"
+
+
+
+        },
+    {
+       "type": "header",
+      "content": "Fourth Category"
+        },
+    {
+       "type":"text",
+            "label":"Name of Collection",
+            "id":"label4",
+       "default":"SHOES"
+       },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group4image1"
+ },
+    {
+     
+      "type":"text",
+            "label":"Text",
+            "id":"group4text1",
+       "default": "Product Name"
+      },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group4link1"
+     },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group4image2"
+       },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group4text2",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group4link2"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group4image3"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group4text3",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group4link3"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group4image4"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group4text4",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group4link4"
+
+
+        },
+    {
+       "type": "header",
+      "content": "Fifth Category"
+        },
+    {
+       "type":"text",
+            "label":"Name of Collection",
+            "id":"label5",
+       "default":"SHOES"
+       },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group5image1"
+ },
+    {
+     
+      "type":"text",
+            "label":"Text",
+            "id":"group5text1",
+       "default": "Product Name"
+      },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group5link1"
+     },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group5image2"
+       },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group5text2",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group5link2"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group5image3"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group5text3",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group5link3"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group5image4"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group5text4",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group5link4"
+
+
+
+
+
+        },
+    {
+       "type": "header",
+      "content": "Sixth Category"
+        },
+    {
+       "type":"text",
+            "label":"Name of Collection",
+            "id":"label6",
+       "default":"SHOES"
+       },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group6image1"
+ },
+    {
+     
+      "type":"text",
+            "label":"Text",
+            "id":"group6text1",
+       "default": "Product Name"
+      },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group6link1"
+     },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group6image2"
+       },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group6text2",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group6link2"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group6image3"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group6text3",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group6link3"
+    },
+    {
+      "type":"image_picker",
+            "label":"Image",
+            "id":"group6image4"
+      },
+    {
+      "type":"text",
+            "label":"Text",
+            "id":"group6text4",
+       "default": "Product Name"
+       },
+    {
+      "type":"url",
+            "label":"link",
+            "id":"group6link4"
+    
+          }
+    ],
+    "presets":[
+      {
+        "name":"Tabs",
+        "category":"custom"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+ 
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

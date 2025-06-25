@@ -1,0 +1,267 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 980px) {
+    /* two text */
+.double .two {
+  position: absolute;
+  width: 100%;
+  top: 50%;filter: drop-shadow(0 0 07rem black);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="section-{{ section.id }}-padding">
+    <div class=" double"><div class="one-half-column-left">
+        <div class="container">
+          {{ section.settings.image1 | image_url: width: 3840 | image_tag:
+            sizes: '(min-width: 980px): 50vw, 100vw',
+            height: '980px',
+            width: '100%' 
+          }}
+          {% comment %} Replaced with image_tag filter for pagespeed optimization 
+            <img src="{{ section.settings.image1|img_url: 'master' }}" alt="{{shop.name}}" width="100%;" height="980px;">
+          {% endcomment %}
+ 
+  <div class="two">
+
+<h4>{{ section.settings.sub1 }}</h4><a href="{{ section.settings.buttonlink1 }}">
+  <h3>{{ section.settings.text1 }}</h3>
+  <p>{{ section.settings.para1 }}</p>
+  <br>
+<div class="button">{{ section.settings.buttontext1 }}</div></a>
+</div>
+</div>
+</div>
+
+
+<div class="one-half-column-right">
+  <div class="container">
+    {{ section.settings.image2 | image_url: width: 3840 | image_tag:
+    sizes: '(min-width: 980px): 50vw, 100vw',
+    height: '980px',
+    width: '100%' 
+    }}
+    {% comment %} Replaced with image_tag filter for pagespeed optimization 
+    <img src="{{ section.settings.image2 |img_url: 'master' }}" alt="{{shop.name}}" width="100%;" height="980px;">
+    {% endcomment %}
+    <div class="two">
+
+<h4>{{ section.settings.sub2 }}</h4><a href="{{ section.settings.buttonlink2 }}">
+  <h3>{{ section.settings.text2 }}</h3>
+    <p>{{ section.settings.para2 }}</p>
+  <br>
+  <div class="button">{{ section.settings.buttontext2 }}</div></a>
+</div>
+</div>
+</div>
+<br style="clear:both;">
+</div>
+<style>
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.container a {
+  text-decoration: none;
+}
+
+.double .button:after {
+  box-shadow: none;
+}
+
+
+.double .one-half-column-right a {margin-left: 0; padding-right: 0;}
+.two h4 {
+text-transform: uppercase;
+letter-spacing:2px;
+width: 90%;filter: drop-shadow(0 0 07rem black);
+margin: 0 auto;
+padding-bottom: 5px;
+margin-top: 0;}
+.double p {max-width: 70%; margin: 0 auto; color: white; filter: drop-shadow(0 0 07rem black); }
+.two h3 {filter: drop-shadow(0 0 07rem black); font-size:50px;
+margin-bottom: 10px; margin-top: 0;}
+@media only screen and (min-width: 901px) {
+.double .one-half-column-left{width:50%; float: left;}
+.double .one-half-column-right {width:50%; float: right;}}
+
+  @media only screen and (min-width: 981px) and (max-width: 1624px) {
+ .double img {
+    height: 680px;
+    object-fit: cover;
+  }
+}
+@media only screen and (min-width: 1625px) {
+  .double img {
+    height: 980px;
+    object-fit: cover;
+  }
+}
+
+  @media only screen and (max-width: 980px) {
+  .double img {
+    height: 480px;
+    object-fit: cover;
+  }
+}
+  
+@media only screen and (max-width: 900px) {
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.two {
+  background: #43523F;
+  color: white;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  padding: 40px 0;
+width: 100%;
+  transform: none;
+}
+
+
+.two h4 {
+filter: none;
+text-transform: uppercase;
+letter-spacing:2px;
+width: 100%;
+margin: 0 auto;
+padding-bottom: 20px;
+margin-top: 0;}
+
+.two h3 {font-size: 24px; none;
+margin-bottom: 10px;}
+
+.one-half-column-left,.one-half-column-right {width:100%; float: none;}
+
+}
+</style>
+
+
+
+
+     </div>
+</div>
+
+{% schema %}
+{
+  "name": "Two Images",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image"
+    },
+    {
+       "type": "text",
+      "id": "text1",
+      "label": "Headline"
+    },
+    {
+       "type": "textarea",
+      "id": "sub1",
+      "label": "Subheading"
+        },
+    {
+       "type": "textarea",
+      "id": "para1",
+      "label": "Copy"
+    },
+    {
+       "type": "text",
+      "id": "buttontext1",
+      "label": "Button Text"
+    },
+    {
+       "type": "url",
+      "id": "buttonlink1",
+      "label": "Button Link"
+    },
+    {
+       "type": "image_picker",
+      "id": "image2",
+      "label": "Image"
+    },
+    {
+       "type": "text",
+      "id": "text2",
+      "label": "Headline"
+    },
+    {
+       "type": "textarea",
+      "id": "sub2",
+      "label": "Subheading"
+       },
+    {
+       "type": "textarea",
+      "id": "para2",
+      "label": "Copy"
+    },
+    {
+       "type": "text",
+      "id": "buttontext2",
+      "label": "Button Text"
+    },
+    {
+       "type": "url",
+      "id": "buttonlink2",
+      "label": "Button Link"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "presets": [
+    {
+       "name": "Two Images"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,226 @@
+<link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
+{% if template == 'index' %}
+<style>
+  @media only screen and (min-width: 1001px) {
+  .predictive-search {position: relative; overflow: hidden;}
+  .predictive-search ul {
+   display: flex;
+ align-items: baseline;
+  flex-direction: column;
+}}
+</style>
+{% endif %}  
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .top-menu {display: none;}}
+
+{%- endstyle -%}
+
+
+
+<div class="color-{{ section.settings.color_scheme }} gradient top-menu">
+  <div class="section-{{ section.id }}-padding page-width">
+    <div class="one-half-column-left">
+      <center>
+<ul class="site-nav{% unless settings.nav_below_logo %} post-large--text-right{% endunless %}" role="navigation" id="AccessibleNav">
+  {% for link in linklists.topmenu-left.links %}
+    {% comment %}
+      Create a dropdown menu by naming a linklist the same as a link in the parent nav
+
+      More info on dropdowns:
+        - http://docs.shopify.com/manual/your-website/navigation/create-drop-down-menu
+    {% endcomment %}
+    {% assign child_list_handle = link.title | handleize %}
+    {% if linklists[child_list_handle].links != blank %}
+      <li class="site-nav--has-dropdown{% if link.active %} site-nav--active{% endif %}" aria-haspopup="true">
+        <a href="{{ link.url }}" class="site-nav__link">
+          {{ link.title }}
+          <span class="icon-fallback-text">
+            <span class="icon icon-arrow-down" aria-hidden="true"></span>
+          </span>
+        </a>
+        <ul class="site-nav__dropdown">
+          {% for childlink in linklists[child_list_handle].links %}
+            <li{% if childlink.active %} class="site-nav--active"{% endif %}>
+              <a href="{{ childlink.url }}" class="site-nav__link">{{ childlink.title | escape }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% else %}
+      <li {% if link.active %}class="site-nav--active"{% endif %}>
+        <a href="{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
+      </li>
+  
+  
+    {% endif %}
+  {% endfor %}
+  
+</ul></center>
+    </div>
+    <div class="one-half-column-right">
+     <div class="localization-wrapper">
+       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        {%- liquid
+          if cart == empty
+            render 'icon-cart-empty'
+          else
+            render 'icon-cart'
+          endif
+        -%}
+        <span class="visually-hidden">{{ 'templates.cart.cart' | t }} </span>
+        {%- if cart != empty -%}
+          <div class="cart-count-bubble">
+            {%- if cart.item_count < 100 -%}
+              <span aria-hidden="true">{{ cart.item_count }}</span>
+            {%- endif -%}
+            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }} </span> 
+          </div>
+        {%- endif -%}
+      </a>
+      <a class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" href="/account/login">{% render 'icon-account' %}{% comment %}MY ACCOUNT{% endcomment %}</a>
+     {% render 'header-search', input_id: 'Search-In-Modal' %} </div>
+      {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
+        <localization-form class="small-hide medium-hide">
+          {%- form 'localization', id: 'AnnouncementCountryForm', class: 'localization-form' -%}
+            <div>
+              <h2 class="visually-hidden" id="AnnouncementCountryLabel">{{ 'localization.country_label' | t }}</h2>
+              {%- render 'country-localization', localPosition: 'AnnouncementCountry' -%}
+            </div>
+          {%- endform -%}
+        </localization-form>
+      {% endif %}
+
+      {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+        <localization-form class="small-hide medium-hide">
+          {%- form 'localization', id: 'AnnouncementLanguageForm', class: 'localization-form' -%}
+            <div>
+              <h2 class="visually-hidden" id="AnnouncementLanguageLabel">{{ 'localization.language_label' | t }}</h2>
+              {%- render 'language-localization', localPosition: 'AnnouncementLanguage' -%}
+            </div>
+          {%- endform -%}
+        </localization-form>
+      {%- endif -%}
+      
+    </div>
+
+</div><br style="clear: both;">
+  </div>
+
+
+
+<style>
+  /*================ Module | Site Nav and Dropdowns ================*/
+ #AccessibleNav a {font-size:15px; letter-spacing: 2px;}
+  .site-nav li {display: inline-block; padding-right:10px;}
+  .site-nav li a:hover {cursor:pointer;}
+.site-nav {
+  
+ cursor: default;
+  margin: 0 auto;
+  
+  text-transform: uppercase;
+  text-align: center;
+font-style: normal;
+  width: 100%;}
+  li {
+    margin: 0;
+    display: block;
+  }
+
+  
+
+
+.site-nav__link {
+  display: block;
+  text-decoration: none;
+  padding: $gutter / 2;
+  white-space: nowrap;
+
+  
+  }
+
+  .site-nav--active & {
+    font-weight: light;
+  }
+
+
+.site-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@media only screen and (min-width: 900px) {
+  .one-half-column-right a {
+    text-decoration: none !important;
+    padding-right: 30px;
+    margin-left: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: inherit;
+        font-size: 14px;
+    letter-spacing: 2px;
+
+  }
+}
+  </style>
+  
+{% schema %}
+{
+  "name": "Top Menu",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+  
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "presets": [
+    {
+      "name": "Top Menu"
+    }
+  ]
+}
+{% endschema %}

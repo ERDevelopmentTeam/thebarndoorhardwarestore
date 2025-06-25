@@ -1,0 +1,1093 @@
+<style>.latests-news-study .all-content-lns img {object-fit:cover;}</style>
+        {%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+{% endstyle %}
+
+<div class="color-{{ section.settings.color_scheme }} gradient border">
+  <div class="section-{{ section.id }}-padding">
+
+<div class="latests-news-study container-fluid">
+        <div class="lns-heading">
+            <h2>{{ section.settings.title }}</h2>
+        </div>
+        <div class="all-btn-lns">
+            <button id="btn1" type="button" >{{ section.settings.btn-text-1 }}</button>
+            <button id="btn2" type="button">{{ section.settings.btn-text-2 }}</button>
+            <button id="btn3" type="button">{{ section.settings.btn-text-3 }}</button>
+            <button id="btn4" type="button">{{ section.settings.btn-text-4 }}</button>
+            <button id="btn5" type="button">{{ section.settings.btn-text-5 }}</button>
+            <button id="btn6" type="button">{{ section.settings.btn-text-6 }}</button>
+        </div>
+
+        <!-- first section  -->
+        <div class="row all-content-lns">
+           
+        <div id="first-section">
+            <div class="all-content-13">
+                <div class="left img-side">
+                    <img src="{{ section.settings.img-1| img_url: 'master' }}" alt="{{ shop.name }}" height="100%;" width="100%;">
+                 </div>
+    
+                 <div class="right content-btn-side"> 
+                     <div class="inner-content">
+                         {{ section.settings.date-text-1 }}
+                         <h6>{{ section.settings.hd-1 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-1 }}</p><a href="{{ section.settings.btn-url-1 }}">{{ section.settings.btn-read-1 }}</a>
+                         </span>
+                     </div>
+    
+                     <div class="inner-content">
+                         {{ section.settings.date-text-2 }}
+                         <h6>{{ section.settings.hd-2 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-2 }}</p><a href="{{ section.settings.btn-url-2 }}">{{ section.settings.btn-read-2 }}</a>
+                         </span>
+                     </div>
+    
+                     <div class="inner-content">
+                         {{ section.settings.date-text-3 }}
+                         <h6>{{ section.settings.hd-3 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-3 }}</p><a href="{{ section.settings.btn-url-3}}">{{ section.settings.btn-read-3 }}</a>
+                         </span>
+                     </div>
+                 </div>
+            </div>
+        </div>
+             
+              <!-- 2nd section  -->
+
+        <div id="second-section">
+            <div class="all-content-13">
+                <div class="col-lg-6 img-side">
+                    <img src="{{ section.settings.img-2| img_url: 'master' }}" alt="{{ shop.name }}" height="100%;" width="100%;">
+                 </div>
+    
+                 <div class="col-lg-6 content-btn-side">
+                      <div class="inner-content">
+                         {{ section.settings.date-text-4 }}
+                         <h6>{{ section.settings.hd-4 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-4}}</p><a href="{{ section.settings.btn-url-4 }}">{{ section.settings.btn-read-4 }}</a>
+                         </span>
+                     </div>
+    
+                     <div class="inner-content">
+                         {{ section.settings.date-text-5 }}
+                         <h6>{{ section.settings.hd-5 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-5 }}</p><a href="{{ section.settings.btn-url-5 }}">{{ section.settings.btn-read-5 }}</a>
+                         </span>
+                     </div>
+    
+                     <div class="inner-content">
+                         {{ section.settings.date-text-6 }}
+                         <h6>{{ section.settings.hd-6 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-6 }}</p><a href="{{ section.settings.btn-url-6 }}">{{ section.settings.btn-read-6 }}</a>
+                         </span>
+                     </div>
+                 </div>
+            </div>
+        </div>
+             
+         <!-- 3rd section  -->
+        <div id="third-section">
+            <div class="all-content-13">
+                <div class="col-lg-6 img-side">
+                    <img src="{{ section.settings.img-3| img_url: 'master' }}" alt="{{ shop.name }}" height="100%;" width="100%;">
+                 </div>
+    
+                 <div class="col-lg-6 content-btn-side">
+                     <div class="inner-content">
+                         {{ section.settings.date-text-7 }}
+                         <h6>{{ section.settings.hd-7 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-7 }}</p><a href="{{ section.settings.btn-url-7 }}">{{ section.settings.btn-read-7 }}</a>
+                         </span>
+                     </div>
+    
+                      <div class="inner-content">
+                         {{ section.settings.date-text-8 }}
+                         <h6>{{ section.settings.hd-8 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-8 }}</p><a href="{{ section.settings.btn-url-8 }}">{{ section.settings.btn-read-8 }}</a>
+                         </span>
+                     </div>
+    
+                   <div class="inner-content">
+                         {{ section.settings.date-text-9 }}
+                         <h6>{{ section.settings.hd-9 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-9 }}</p><a href="{{ section.settings.btn-url-9 }}">{{ section.settings.btn-read-9 }}</a>
+                         </span>
+                     </div>
+                 </div>
+            </div>
+        </div>
+          
+        <!-- 4th section  -->
+        <div id="four-section">
+            <div class="all-content-13">
+                <div class="col-lg-6 img-side">
+                    <img src="{{ section.settings.img-4| img_url: 'master' }}" alt="{{ shop.name }}" height="100%;" width="100%;">
+                 </div>
+    
+                 <div class="col-lg-6 content-btn-side">
+                     <div class="inner-content">
+                         {{ section.settings.date-text-10 }}
+                         <h6>{{ section.settings.hd-10 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-10 }}</p><a href="{{ section.settings.btn-url-10 }}">{{ section.settings.btn-read-10 }}</a>
+                         </span>
+                     </div>
+    
+                      <div class="inner-content">
+                         {{ section.settings.date-text-11 }}
+                         <h6>{{ section.settings.hd-11 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-11 }}</p><a href="{{ section.settings.btn-url-11 }}">{{ section.settings.btn-read-11 }}</a>
+                         </span>
+                     </div>
+    
+                     <div class="inner-content">
+                         {{ section.settings.date-text-12 }}
+                         <h6>{{ section.settings.hd-12 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-12 }}</p><a href="{{ section.settings.btn-url-12}}">{{ section.settings.btn-read-12 }}</a>
+                         </span>
+                     </div>
+                 </div>
+            </div>
+        </div>
+
+        <!-- 5th section  -->
+        <div id="five-section">
+            <div class="all-content-13">
+                <div class="col-lg-6 img-side">
+                    <img src="{{ section.settings.img-5| img_url: 'master' }}" alt="{{ shop.name }}" height="100%;" width="100%;">
+                 </div>
+    
+                 <div class="col-lg-6 content-btn-side">
+                     <div class="inner-content">
+                         {{ section.settings.date-text-13 }}
+                         <h6>{{ section.settings.hd-1 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-13 }}</p><a href="{{ section.settings.btn-url-13 }}">{{ section.settings.btn-read-13 }}</a>
+                         </span>
+                     </div>
+    
+                      <div class="inner-content">
+                         {{ section.settings.date-text-14 }}
+                         <h6>{{ section.settings.hd-14 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-14 }}</p><a href="{{ section.settings.btn-url-14 }}">{{ section.settings.btn-read-14 }}</a>
+                         </span>
+                     </div>
+    
+                     <div class="inner-content">
+                         {{ section.settings.date-text-15 }}
+                         <h6>{{ section.settings.hd-15 }}</h6>
+                         <span>
+                             <p>{{ section.settings.des-15 }}</p><a href="{{ section.settings.btn-url-15 }}">{{ section.settings.btn-read-15 }}</a>
+                         </span>
+                     </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+
+</div></div></div>
+
+
+{% schema %}
+  {
+    "name": "Featured Blog Posts",
+    "settings": [
+       {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+         
+           },
+    {
+        
+      "type": "text",
+      "id": "title",
+      "label": "Header",
+      "default": "Latest Blog Posts"
+     
+           },
+    {
+            "type":"text",
+            "label":"Button-text",
+            "id":"btn-text-1",
+            "default":"Studies"
+          },
+       {
+            "type":"image_picker",
+            "label":"Image",
+            "id":"img-1"
+          },
+          {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-1",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-1",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-1",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-1",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-1"
+          },
+       {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-2",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-2",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-2",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-2",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-2"
+          },
+       {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-3",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-3",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-3",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-3",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-3"
+          },
+
+
+
+
+      
+      {
+            "type":"text",
+            "label":"Button-text",
+            "id":"btn-text-2",
+            "default":"Studies"
+          },
+       {
+            "type":"image_picker",
+            "label":"Image",
+            "id":"img-2"
+          },
+          {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-4",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-4",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-4",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-4",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-4"
+          },
+       {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-5",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-5",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-5",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-5",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-5"
+          },
+       {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-6",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-6",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-6",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-6",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-6"
+          },
+
+
+
+
+      
+      {
+            "type":"text",
+            "label":"Button-text",
+            "id":"btn-text-3",
+            "default":"Studies"
+          },
+       {
+            "type":"image_picker",
+            "label":"Image",
+            "id":"img-3"
+          },
+         {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-7",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-7",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-7",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-7",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-7"
+          },
+       {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-8",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-8",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-8",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-8",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-8"
+          },
+       {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-9",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-9",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-9",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-9",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-9"
+          },
+
+
+
+
+      
+      {
+            "type":"text",
+            "label":"Button-text",
+            "id":"btn-text-4",
+            "default":"Studies"
+          },
+       {
+            "type":"image_picker",
+            "label":"Image",
+            "id":"img-4"
+          },
+          {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-10",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-10",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-10",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-10",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-10"
+          },
+       {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-11",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-11",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-11",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-11",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-11"
+          },
+       {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-12",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-12",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-12",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-12",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-12"
+          },
+      
+      {
+            "type":"text",
+            "label":"Button-text",
+            "id":"btn-text-5",
+            "default":"Studies"
+          },
+       {
+            "type":"image_picker",
+            "label":"Image",
+            "id":"img-5"
+          },
+          {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-13",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-13",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-13",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-13",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-13"
+          },
+       {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-14",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-14",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-14",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-14",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-14"
+          },
+       {
+            "type":"text",
+            "label":"Date Text",
+            "id":"date-text-15",
+            "default":"01.02.2023"
+          },
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"hd-15",
+            "default":"Blog Post Title Goes Here"
+          },
+        {
+            "type":"text",
+            "label":"Description",
+            "id":"des-15",
+            "default":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, consequuntur culpa itaque corporis cumque esse placeat cum minima! Velit doloremque quam rem voluptate nesciunt illo assumenda possimus itaque laborum laudantium."
+          },
+         {
+            "type":"text",
+            "label":"Read Button",
+            "id":"btn-read-15",
+            "default":"Read"
+          },
+      {
+            "type":"url",
+            "label":"Button Link",
+            "id":"btn-url-15"
+          },
+      {
+            "type":"text",
+            "label":"Button-text",
+            "id":"btn-text-6",
+            "default":"READ ALL"
+          }
+    ],
+    "presets":[
+      {
+        "name": "Featured Blog Posts",
+        "category":"custom"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+         
+
+      button {
+    border-radius: 0;
+}
+  button, [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button;
+}
+
+  input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+  
+
+#btn1, #btn2, #btn3, #btn4, #btn5, #btn6 {color:inherit;}
+  
+  button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+.latests-news-study {
+  padding: 20px 0;
+}
+.latests-news-study a {
+  color:inherit;}
+  
+  .latests-news-study {
+  margin: 4rem 0;
+  padding: 0;
+}
+.latests-news-study .lns-heading h2 {
+  text-align: center;
+  color: inherit;
+  font-size: 2.5em;
+}
+
+
+.latests-news-study .all-btn-lns button .active-btn {
+  border-bottom: 1px solid black;
+}
+.latests-news-study .all-content-lns {
+  margin-top: 4rem;
+  padding: 0;
+}
+.latests-news-study .all-content-lns #first-section {
+  display: block;
+}
+
+.latests-news-study .all-content-lns #second-section,
+.latests-news-study .all-content-lns #third-section,
+.latests-news-study .all-content-lns #four-section,
+.latests-news-study .all-content-lns #five-section {
+  display: none;
+}
+.latests-news-study .all-content-lns #second-section .all-content-13,
+.latests-news-study .all-content-lns #third-section .all-content-13,
+.latests-news-study .all-content-lns #four-section .all-content-13,
+.latests-news-study .all-content-lns #five-section .all-content-13 {
+  display: flex;
+  margin-top: 2rem;
+}
+
+
+.latests-news-study .all-content-lns .content-btn-side .inner-content strong {
+  font-size: inherit;
+  letter-spacing: 1px;
+}
+.latests-news-study .all-content-lns .content-btn-side .inner-content h6 {
+  font-size: inherit;
+  letter-spacing: 2px;
+  color: inherit;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+  .latests-news-study .all-content-lns .content-btn-side .inner-content h6 {
+    font-weight: inherit;
+  }
+
+
+  @media only screen and (min-width: 900px){
+    .col-lg {
+    flex: 1 0 0%;
+  }
+  
+   .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+    .latests-news-study .all-content-lns .content-btn-side .inner-content span a {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: inherit;
+  font-weight: inherit;
+  position: absolute !important;
+  letter-spacing: 2px;
+  bottom: 3rem !important;
+  right: 0;
+}
+    .latests-news-study .all-content-lns .content-btn-side .inner-content span {
+  display: flex;
+  gap: 3rem;
+  position: relative;
+}
+.latests-news-study .all-content-lns .content-btn-side .inner-content span p {
+  width: 70% !important;
+  font-size: inherit;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-top: 2rem;
+}
+    .latests-news-study .all-content-lns .content-btn-side .inner-content {
+  margin: 4rem 0 0 5rem !important;
+  padding: 0 0 2rem 1rem;
+  width: 85%;
+      text-align: left !important;
+  border-bottom: 1px solid black;
+}
+    .latests-news-study .all-content-lns .img-side img {
+    width: 100%;
+    height: 100vh;
+}
+    .latests-news-study .all-content-lns #first-section .all-content-13 {
+  display: flex;
+  margin-top: 2rem;
+}
+    .latests-news-study .all-btn-lns {
+  display: flex;
+  margin-top: 2rem;
+  gap: 4rem;
+  justify-content: center;
+}
+    .latests-news-study .all-btn-lns button {
+  border: none;
+  text-transform: uppercase;
+  font-size: inherit;
+  background-color: inherit;
+}
+    
+    .featured-article .sp-heading {
+            padding: 2rem 4rem 0rem 4rem;
+          display: flex;
+    align-items: center;
+        }
+.left-side {width: 50%; float: left; margin-bottom:20px;}
+.right-side {width: 50%; float: left;}
+.left {width: 50%; float: left;}
+.right {width: 50%; float: left;}
+}
+
+    @media only screen and (max-width: 899px){
+      .latests-news-study .all-content-lns #second-section .all-content-13, .latests-news-study .all-content-lns #third-section .all-content-13, .latests-news-study .all-content-lns #four-section .all-content-13, .latests-news-study .all-content-lns #five-section .all-content-13 {
+    display: grid;
+    margin-top: 2rem;
+}
+          .latests-news-study .all-content-lns .content-btn-side .inner-content span a {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: inherit;
+  font-weight: inherit;
+  position: relative !important;
+  letter-spacing: 2px;
+  bottom: auto !important;
+  right: 0;
+}
+      .latests-news-study .all-content-lns .content-btn-side .inner-content span {
+  display: block;
+  gap: 3rem;
+  position: relative;
+}
+.latests-news-study .all-content-lns .content-btn-side .inner-content span p {
+  width: 90% !important;
+  font-size: inherit;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-top: 2rem;
+}
+
+      .latests-news-study .all-content-lns .content-btn-side .inner-content {
+  margin: 4rem 0 0 0rem !important;
+  padding: 0 0 2rem 1rem;
+        text-align: left;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+      
+      .latests-news-study .all-content-lns .img-side img {
+    width: 100%;
+    height:  50vh;
+}
+   .latests-news-study .all-content-lns #first-section .all-content-13 {
+    display: block;
+    margin-top: 0rem;
+}
+.left {width: 100%; float: none;}
+.right {width:100%; float: none;}
+      .latests-news-study .all-btn-lns button {
+    border: none;
+    text-transform: uppercase;
+    font-size: inherit;
+    background-color: inherit;
+}
+      .latests-news-study .all-btn-lns {
+    display: flex;
+    margin-top: 2rem;
+    gap: 0rem;
+    justify-content: center;
+}
+    .featured-article .sp-heading {
+            padding: 2rem 4rem 0rem 4rem;
+          display: flex;
+    align-items: center;
+        }
+.left-side {width: 100%; float: none; margin-bottom:20px;}
+.right-side {width: 100%; float: none;}
+.left {width: 100%; float: none;}
+.right {width: 100%; float: none;}
+}
+
+@media only screen and (max-width: 1750px) {
+  .video-content11 .all-content-vc .img-side-vc img {
+    width: 100%;
+    height: 100%;
+  }
+  .video-content11 .all-content-vc .text-side-vc .inner-vc-content .text-num h4 {
+    width: 70%;
+    font-size: inherit;
+  }
+  .video-content11 .all-content-vc .text-side-vc .inner-vc-content .video-link {
+    width: 35%;
+    align-items: center;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+   // js for section four 
+        
+        let btn1 = document.getElementById('btn1');
+        let btn2 = document.getElementById('btn2');
+        let btn3 = document.getElementById('btn3');
+        let btn4 = document.getElementById('btn4');
+        let btn5 = document.getElementById('btn5');
+        let btn6 = document.getElementById('btn6');
+        // let activeBtn = document.querySelector(".active-btn")
+
+        let firstSection = document.getElementById('first-section'); 
+        let secondSection = document.getElementById('second-section'); 
+        let thirdSection = document.getElementById('third-section'); 
+        let fourSection = document.getElementById('four-section'); 
+        let fiveSection = document.getElementById('five-section'); 
+
+         btn1.onclick = ()=>{
+             firstSection.style.display = "block";
+             secondSection.style.display = "none";
+             thirdSection.style.display = "none";
+             fourSection.style.display = "none";
+             fiveSection.style.display = "none";
+            //  if(firstSection.style.display = "block"){
+            //     btn1.classList.add('active-btn')
+            //  }
+   
+         }
+
+         btn2.onclick = ()=>{
+             firstSection.style.display = "none";
+             secondSection.style.display = "block";
+             thirdSection.style.display = "none";
+             fourSection.style.display = "none";
+             fiveSection.style.display = "none";
+         }
+         btn3.onclick = ()=>{
+             firstSection.style.display = "none";
+             secondSection.style.display = "none";
+             thirdSection.style.display = "block";
+             fourSection.style.display = "none";
+             fiveSection.style.display = "none";
+         }
+
+         btn4.onclick = ()=>{
+             firstSection.style.display = "none";
+             secondSection.style.display = "none";
+             thirdSection.style.display = "none";
+             fourSection.style.display = " block";
+             fiveSection.style.display = "none";
+         }
+
+         btn5.onclick = ()=>{
+             firstSection.style.display = "none";
+             secondSection.style.display = "none";
+             thirdSection.style.display = "none";
+             fourSection.style.display = "none";
+             fiveSection.style.display = "block";
+         }
+
+         btn6.onclick = ()=>{
+             firstSection.style.display = "block";
+             secondSection.style.display = "block";
+             thirdSection.style.display = "block";
+             fourSection.style.display = "block";
+             fiveSection.style.display = "block";
+         }
+
+{% endjavascript %}
+
+

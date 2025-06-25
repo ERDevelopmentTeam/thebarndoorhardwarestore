@@ -1,0 +1,225 @@
+
+  {%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="section-{{ section.id }}-padding">
+    <div id="menu_newsletterwidget">
+  <div class="newsletter_container">
+    <div class="newsletter_title">
+
+      <div class="img_newsletter_title">
+        <h2>{{ section.settings.newslettertitle }}</h2>
+        <span>{{ section.settings.newslettertext }}
+        </span>
+        <br>
+      </div>
+    </div>
+  <div class="widget widget__newsletter">
+  <div class="widget_header">
+    {% if settings.mailing_list_title.size > 0 %}<h3>{{ settings.mailing_list_title }}</h3>{% endif %}
+  </div>
+  <div class="widget_content">
+  
+    <div id="mailing-list-module">
+      
+      {% if settings.mailing_list_tagline.size > 0 %}
+        <p>{{ settings.mailing_list_tagline }}</p>
+      {% endif %}
+
+      {% if settings.mailchimp_form_action.size > 0 %}
+      <form action="{{ settings.mailchimp_form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form form-inline" target="_blank" role="form">
+        <div class="form-group">
+          <input type="email" placeholder="your@email.com" name="EMAIL" id="email-input" class="form-control" />
+        </div>
+        <input type="submit" class="btn btn-info styled-submit" value="Sign Up" name="SUBSCRIBE" id="email-submit" />
+      </form>
+      {% else %}
+        {% form 'customer' %}        
+          
+          <input type="hidden" id="contact_tags" name="contact[tags]" value="prospect,newsletter" />
+          <input type="hidden" id="newsletter-first-name" name="contact[first_name]" value="Subscriber" />
+          <input type="hidden" id="newsletter-last-name" name="contact[last_name]" value="Newsletter" />
+          <input type="email" placeholder="your@email.com" name="contact[email]" id="email-input" />
+          <input type="submit" class="btn styled-submit" value="Subscribe" name="subscribe" id="email-submit" />
+          <br>
+          {% if form.posted_successfully? or form.errors %}
+            <script>window.location.hash = '#mailing-list-module';</script>
+          {% endif %}
+          {% if form.posted_successfully? %}
+            <p class="success feedback accent-text">Thank you for signing up!</p>
+          {% endif %}
+          {% if form.errors %}
+            <p class="error feedback accent-text">
+              {% for field in form.errors %}
+                {{ field }}{{ form.errors.messages[field] }}
+              {% endfor %}
+            </p>
+          {% endif %}       
+        {% endform %} 
+      {% endif %}
+    </div>
+  </div>
+  </div></div>
+</div>
+  </div>
+</div>
+
+
+<style>
+  
+/*
+div#menu_buttons{
+  max-width:100%;
+}*/
+#menu_newsletterwidget{
+  display:flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  background:inherit;
+}
+
+.newsletter_title{
+  text-align: center;
+  align-items: center;
+  height:100%;
+}
+
+
+#menu_newsletterwidget .img_newsletter_title{
+  color: white;
+  height:100%;
+  padding-bottom:20px;
+  text-align: center;
+}
+#menu_newsletterwidget .img_newsletter_title h2{
+  margin: 0 0 -5px 0;
+  text-transform:uppercase;
+  color: inherit;
+  text-align: center;
+  padding-bottom:20px;
+  font-size:1.7em;
+}
+
+#menu_newsletterwidget .img_newsletter_title span{
+  font-size: inherit;
+  text-align: center;
+  width:100%;
+  padding-bottom:20px;
+}
+
+
+
+input{
+  width: 200px;
+  height: 90%;
+  font-size:12px;
+  background-color: inherit;
+  padding: 15px;
+  font-size: 1em;
+  border: 1px solid ;
+  box-shadow: none;
+  margin-right:10px;
+  border-radius: 0;
+  color:inherit;
+}
+
+::placeholder {
+  font-family: inherit;
+  color: inherit;
+  font-size:12px;
+}
+
+.btn {font-size:12px; padding: 17px;}
+
+@media screen and (max-width:630px){
+ 
+  .img_newsletter_title{
+    margin-bottom:10px
+  }
+  input{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.btn:hover {
+    background: inherit;
+    color: inherit;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    opacity: .8;
+  }
+</style>
+
+
+{% schema %}
+{
+   "name": "Inline Newsletter",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "newslettertitle",
+      "label": "Newsletter Title",
+      "default": "Newsletter"
+    },
+    {
+      "type": "text",
+      "id": "newslettertext",
+      "label": "Newsletter Text",
+      "default": "Sign up here to receive updates & promotions."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "presets": [
+    {
+      "name": "Inline Newsletter"
+    }
+  ]
+}
+{% endschema %}
